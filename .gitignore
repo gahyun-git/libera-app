@@ -1,0 +1,182 @@
+# Python 관련
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 가상환경
+venv/
+env/
+ENV/
+.venv/
+.env
+.env.local
+.ENV/
+venv.bak/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# 환경변수 파일들
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.testing
+
+# IDE 및 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+logs/
+log/
+
+# 데이터베이스
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# AI 서비스 키 파일
+*.json
+service-account-*.json
+credentials/
+keys/
+
+# 업로드된 파일 및 임시 파일
+uploads/
+temp/
+cache/
+tmp/
+.tmp/
+*.tmp
+
+# PDF 처리 관련 임시 파일
+extracted_data/
+pdf_cache/
+processed_pdfs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# 백업 파일
+backup/
+backup_*/
+*.backup
+*.bak
+
+# 설정 파일 백업
+config_backup/
+*.conf.bak
+
+# 컴파일된 바이너리
+*.exe
+*.out
+*.app
+
+# 성능 프로파일링
+*.prof
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Alembic 마이그레이션 (버전 관리 제외)
+# alembic/versions/*.py  # 필요시 주석 해제
+
+# API 문서 빌드
+docs/_build/
+
+# Mac 관련
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows 관련
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Linux 관련
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs* 
