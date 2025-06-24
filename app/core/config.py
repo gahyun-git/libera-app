@@ -16,19 +16,19 @@ class Settings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
     
-    # 데이터베이스 설정 (비동기만 지원)
-    async_database_url: str = "postgresql+asyncpg://libetion_user:libetion_password@localhost:5432/libetion_db"
+    # 데이터베이스 설정
+    async_database_url: Optional[str] = os.getenv("DATABASE_URL", None)
     
     # CORS 설정
     cors_origins: List[str] = ["*"]
     
     # 보안 설정
-    secret_key: str = "your-secret-key-here"
-    algorithm: str = "HS256"
-    access_token_expire_minutes: int = 30
+    secret_key: Optional[str] =  os.getenv("SECRET_KEY")
+    algorithm: Optional[str] = os.getenv("ALGORITHM")
+    access_token_expire_minutes: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
     
     # 파일 업로드 설정
-    max_file_size: int = 50 * 1024 * 1024  # 50MB
+    max_file_size: int = 10 * 1024 * 1024  # 10MB
     upload_dir: str = "uploads"
     allowed_extensions: List[str] = [".pdf"]
     
